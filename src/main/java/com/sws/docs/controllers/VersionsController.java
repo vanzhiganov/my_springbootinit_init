@@ -35,7 +35,7 @@ public class VersionsController {
         Version user1 = new Version();
         user1.setId(1);
         user1.setVersion("v1");
-        user1.setUri("/v1");
+//        user1.setUri("/v1");
 
         Version user2 = new Version();
         user2.setId(2);

@@ -2,6 +2,7 @@ package com.sws.docs.models;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -20,6 +21,7 @@ public class Version implements Serializable {
     @XmlAttribute(name="version")
     private String version;
 
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     @XmlAttribute(name="uri")
     private String uri;
 
